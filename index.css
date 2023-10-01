@@ -1,0 +1,90 @@
+:root {
+    --background: #FFFFEA;
+    --text-color: #FFFFFF;
+    --inputBackground: #D8D8D8;
+    --addBtnBackground: #FF5E5B;
+    --itemBtnBackground: #00CECB;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--background);
+    color: var(--text-color);
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 30px auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.logo {
+    width: 150px;
+    margin: 0 auto;
+}
+
+#input-field {
+    color: #0D0D0D;
+    background-color: var(--inputBackground);
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    margin: 10px 0;
+}
+
+#add-button {
+    color: var(--text-color);
+    background-color: var(--addBtnBackground);
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+#add-button:hover {
+    background-color: #d15654;
+    cursor: pointer;
+}
+
+#shopping-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#shopping-list li {
+    font-size: 20px;
+    color: var(--text-color);
+    background-color: var(--itemBtnBackground);
+    padding: 15px;
+    border-radius: 8px;
+    flex-grow: 1;
+    text-align: center;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2)
+}
+
+#shopping-list li:hover {
+    background-color: #03a3a1;
+    cursor: pointer;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
