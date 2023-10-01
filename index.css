@@ -22,12 +22,6 @@ html, body {
     margin: 30px auto;
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    margin: 0 10px;
-}
-
 .logo {
     width: 150px;
     margin: 0 auto;
